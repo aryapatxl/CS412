@@ -2,10 +2,9 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var ps3 = require('/Users/arya/hw2-cs412/ps3.js');
+var ps3 = require('./ps3');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use('/ps3', ps3);
 
 app.set('view engine', 'pug');
