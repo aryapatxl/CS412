@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchFormComponent,
+    ResultDisplayComponent,
+    ParentComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -21,4 +24,7 @@ export class AppModule { }
 
 // app.module.ts
 import { HttpClientModule } from '@angular/common/http';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { ResultDisplayComponent } from './result-display/result-display.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
 
