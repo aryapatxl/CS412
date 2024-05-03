@@ -1,1 +1,4 @@
-<p>parent-component works!</p>
+<p>Displayz</p>
+
+<app-search-form (queryEvent)="fetchData($event)"></app-search-form>
+<app-result-display [data]="data"></app-result-display>
