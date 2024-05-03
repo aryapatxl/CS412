@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<div *ngIf="data">
+  <div *ngFor="Data">
+    {{item.name}}
+  </div>
+</div>
+
+<button (click)="fetchData()">Fetch Data</button>
+<router-outlet></router-outlet>
